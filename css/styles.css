@@ -1,0 +1,27 @@
+body {
+    background-color: gray;
+}
+
+nav {
+    padding-left: 1vw;
+    border: 2px solid black;
+}
+
+.d-inline-block-align-top {
+    margin-right: 1vw;
+}
+
+form {
+    text-align: center;
+    padding-top: 3vh;
+}
+
+button {
+    margin-left: 1vw;
+    border: 2px solid black;
+}
+
+input {
+    border: 2px solid black;
+}
+

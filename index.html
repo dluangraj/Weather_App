@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="/favicon_io/site.webmanifest">
+<!-- add scripts tags here -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/main.js" defer></script>
+<title>Weather App</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+          <img src="/favicon_io/favicon-32x32.png" width="40" height="40" class="d-inline-block-align-top" alt="icon">
+            <b>Weather App</b>
+        </a>
+      </nav>
+      <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <!-- using DOM to grab form data -->
+                <form name="testDataForm" id="testDataForm">
+                    <input type="text" name='city' id="city" placeholder="Enter City">
+                    <input type="text" name='zipcode' id="zipcode" placeholder="Enter Zip Code">
+                    <!-- Section for API Content -->
+                    <button id="submitButton" onclick="loadData()">Submit</button>
+                </form>
+                <section class="list-group text-center city-list mt-3">
+                    <!-- API Content Here -->
+                </section>
+            </div>
+        </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
